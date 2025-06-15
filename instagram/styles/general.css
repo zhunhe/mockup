@@ -1,0 +1,70 @@
+:root {
+  --background-color: #FFFFFF;
+  --text-color: #262626;
+  --border-color: #DBDBDB;
+  --secondary-text-color: #999999;
+  --input-background: #FAFAFA;
+  --link-color: #0093F5;
+  --icon-color: #262626;
+}
+
+.darkTheme {
+  --background-color: #121212;
+  --text-color: #FFFFFF;
+  --border-color: #2F2F2F;
+  --secondary-text-color: #8E8E8E;
+  --input-background: #2F2F2F;
+  --link-color: #0093F5;
+  --icon-color: #FFFFFF;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto';
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+.darkTheme img[src*=".svg"] {
+  filter: brightness(0) invert(0.8);
+  transition: filter 0.3s ease;
+}
+
+.story__border svg {
+  stroke: var(--border-color);
+  fill: none;
+}
+
+.header__logo img,
+.header__theme-button img,
+.header__search img,
+.post__button img {
+  color: var(--icon-color);
+}

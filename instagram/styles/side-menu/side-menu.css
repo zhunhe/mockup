@@ -1,0 +1,16 @@
+.side-menu {
+  max-width: 290px;
+  position: fixed;
+  left: 50%;
+  top: 84px;
+  transform: translateX(calc(-50% + 322px));
+  display: none;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+@media (min-width: 1024px) {
+  .side-menu {
+    display: flex;
+  }
+}

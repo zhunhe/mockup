@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles/header/header.css" />
+  <link rel="stylesheet" type="text/css" href="styles/header/search.css" />
+  <link rel="stylesheet" type="text/css" href="styles/main/main.css" />
+  <link rel="stylesheet" type="text/css" href="styles/main/posts.css" />
+  <link rel="stylesheet" type="text/css" href="styles/main/stories.css" />
+  <link rel="stylesheet" type="text/css" href="styles/side-menu/footer.css" />
+  <link rel="stylesheet" type="text/css" href="styles/side-menu/side-menu.css" />
+  <link rel="stylesheet" type="text/css" href="styles/side-menu/suggestions.css" />
+  <link rel="stylesheet" type="text/css" href="styles/side-menu/user.css" />
+  <link rel="stylesheet" type="text/css" href="styles/general.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__content">
+      <div class="header__buttons">
+        <a href="index.html" class="header__home">
+          <img src="assets/icons/logo.svg" alt="logo" class="header__logo" />
+        </a>
+        <button class="header__theme-button">
+          <img src="" alt="theme" class="theme-icon" />
+        </button>
+      </div>
+      <div class="header__search">
+        <img src="assets/icons/search.svg" alt="search" />
+        <input type="text" placeholder="search..." />
+      </div>
+      <div class="header__buttons" id="headerButtons">
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section class="content-container">
+      <div class="content">
+        <div class="stories">
+          <div class="stories__content" id="storiesContainer">
+          </div>
+        </div>
+
+        <div class="posts">
+        </div>
+      </div>
+
+      <div class="side-menu">
+        <div class="side-menu__user-profile">
+          <a href="#" class="side-menu__user-avatar">
+            <img src="assets/images/avatar.png" alt="user picture" />
+          </a>
+          <div class="side-menu__user-info">
+            <a href="#">jennierubyjane</a>
+            <span>nickname</span>
+          </div>
+          <button class="side-menu__user-button">
+            Switch
+          </button>
+        </div>
+        <div class="side-menu__suggestions-section">
+          <div class="side-menu__suggestions-header">
+            <h2>Suggestions for you</h2>
+            <button>See All</button>
+          </div>
+          <div class="side-menu__suggestions-content" id="suggestionsContainer">
+          </div>
+        </div>
+        <div class="side-menu__footer">
+          <div class="side-menu__footer-links">
+            <ul class="side-menu__footer-list">
+            </ul>
+          </div>
+          <span class="side-menu__footer-copyright">&copy; 2025 instagram from facebook</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="scripts/header/header.js"></script>
+  <script src="scripts/header/theme.js"></script>
+  <script src="scripts/main/posts.js"></script>
+  <script src="scripts/main/stories.js"></script>
+  <script src="scripts/side-menu/footer.js"></script>
+  <script src="scripts/side-menu/suggestions.js"></script>
+</body>
+</html>

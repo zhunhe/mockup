@@ -1,0 +1,30 @@
+:root {
+  --background-color: #0F0F0F;
+  --button-color: #212121;
+  --hover-color: #FFFFFF1A;
+  --hover-hover-color: #FFFFFF2E;
+  --text-color: white;
+  --text-secondary: #AAAAAA;
+}
+
+* {
+  color: var(--text-color);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: Roboto, Arial;
+  font-weight: 400;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

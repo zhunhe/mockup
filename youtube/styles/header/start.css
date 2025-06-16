@@ -1,0 +1,26 @@
+.start {
+  display: flex;
+  align-items: center;
+}
+
+.guide-btn {
+  width: 40px;
+  height: 40px;
+  margin-right: 4px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+  outline: none;
+}
+
+.guide-btn:hover,
+.guide-btn:focus {
+  background-color: var(--hover-color);
+}
+
+.youtube-logo {
+  border-radius: 8px;
+  padding: 18px 14px 18px 16px;
+}

@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  inset: 0 0 auto 0;
+  background-color: var(--background-color);
+  padding: 0 16px;
+  height: 55px;
+  z-index: 999;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -30px;
+  background-color: gray;
+  color: var(--text-color);
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+*:hover > .tooltip {
+  opacity: 1;
+}

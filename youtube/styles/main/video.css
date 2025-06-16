@@ -1,0 +1,82 @@
+.video-preview {
+  margin: -8px;
+  padding: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.video-preview:hover {
+  background-color: var(--hover-color);
+}
+
+.video-thumbnail {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 7px;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.video-info {
+  display: flex;
+  gap: 12px;
+}
+
+.video-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-picture {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.video-title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.video-author,
+.video-stats {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 20px;
+}
+
+.video-stats {
+  display: block;
+}
+
+.video-title[tabindex="0"]:focus,
+.video-author[tabindex="0"]:focus,
+.profile-picture[tabindex="0"]:focus {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.profile-picture[tabindex="0"]:focus {
+  border-radius: 50%;
+}
